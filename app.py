@@ -4,7 +4,7 @@ import pickle
 from PIL import Image
 from fastai.vision.all import *
 from pathlib import Path
-import coremltools as ct
+import wikipedia
 
 
 path = Path()
@@ -20,4 +20,5 @@ if upload is not None:
     st.image(image, caption='Uploaded Image.')
     pred,pred_idx,probs = learn_inf.predict(image)
 
-    st.title(f'I am {probs[pred_idx] * 100:.04f}% sure this is a {pred} coral.')
+    st.title(f'I am {probs[pred_idx] * 100:.02f}% sure this is a {pred} coral.')
+    st.write(wikipedia.summary(f'{pred} coral'))
