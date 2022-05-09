@@ -8,9 +8,7 @@ import wikipedia
 
 
 path = Path()
-learn_inf = load_learner(path/'model.pkl')
-
-
+learn_inf = load_learner(path/'learn3.pkl')
 
 st.title('Coral Classifier :mag_right:')
 upload = st.file_uploader('Upload picture of coral here')
