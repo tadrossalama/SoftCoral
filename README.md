@@ -1,4 +1,4 @@
 # zoafind
 
 
-![alt text](test_app.png)
+![alt text](test_app.jpg)
