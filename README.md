@@ -1,4 +1,4 @@
 
 
 
-![alt text](test_app.jpg)
+![alt text](AppLayout_2.png.jpg)
